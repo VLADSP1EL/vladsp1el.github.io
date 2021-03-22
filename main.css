@@ -1,0 +1,76 @@
+body{
+	background-color: white;
+	transition: 0.3s;
+}
+
+.main{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-top: 20px;
+	transition: 0.3s;
+}
+
+.generator{
+	display: block;
+	text-align: center;
+	padding: 50px;
+	
+	margin: 0 auto;
+	transition: 0.3s;
+}
+
+.mat_parrent{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 40px;
+	transition: 0.3s;
+}
+
+#mat{
+	font-size: 40px;
+	transition: 0.3s;
+}
+
+.switch{
+	background-color: #2a2a2a;
+	width: 50px;
+	height: 25px;
+	margin-top: 15px;
+	margin-left: 20px;
+	transition: 0.3s;
+}
+
+.sun{
+	width: 20px;
+	height: 20px;
+	margin-top: 2.5px;
+	margin-left: 2.5px;
+	background-color: yellow;
+	transition: 0.3s;
+}
+
+.facts{
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	transition: 0.3s;
+}
+
+@media (max-width: 1000px) {
+  .generator{
+  	width: 300px;
+  }
+  .switch{
+	background-color: #2a2a2a;
+	width: 50px;
+	height: 25px;
+	margin-top: 5px;
+	margin-left: 20px;
+	transition: 0.3s;
+}
+
+
+}
