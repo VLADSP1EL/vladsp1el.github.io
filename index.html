@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 	<title>Shtorm TV</title>
 </head>
 <body>
@@ -17,7 +19,9 @@
 				<div class="promo_text">
 					<div class="shtorm_logo"><img src="img/shtorm_logo.png" class="shtorm_logo" width="30%" alt=""></div>
 					<h1>Дивись найкращі українські та зарубіжні телеканали зі SHTORM TV!</h1><br><Br>
+						<nav id="menu">
 					<a href="#connect" class="button_purchase">Підключай SHTORM TV за 1 грн / міс*</a><br><br>
+				</nav>
 					<a class="alert">* Тільки для нових користувачів</a><br><br>
 
 				</div>
@@ -27,7 +31,7 @@
 
 	<!--Список каналов-->
 		<div class="content">
-			<h2 style="color: black;">Какой-то текст про каналы</h1><br><br>
+			<h2 style="color: black;">130 + кращих телеканалів українського та зарубіжного виробництва</h1><br><br>
 				<div class="channel_list_center">			
 				<div class="channel_list">
 					<img src="img/ukraine.png"  alt="">
@@ -63,5 +67,16 @@
 		</div>
 	</footer>
 	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		   $("#menu").on("click","a", function (event) {
+			   event.preventDefault();
+			   var id  = $(this).attr('href'),
+				   top = $(id).offset().top;
+			   $('body,html').animate({scrollTop: top}, 1500);
+		   });
+	   });
+	   </script>
 </body>
 </html>
