@@ -87,6 +87,10 @@ a{
 	text-decoration: none;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 .promo_image{
 	background-image: url(img/main_background.jpg);
 	background-repeat: no-repeat;
@@ -112,7 +116,7 @@ h2{
 	color: white;
 	font-family: 'SF UI Text';
 	font-size: 45px;
-
+	
 }
 
 .promo_text{
@@ -120,7 +124,7 @@ h2{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 150px;
+	padding-top: 50px;
 	width: 70%;
 
 }
@@ -167,8 +171,8 @@ h2{
 
 .channel_list{
 	display: grid;
-	grid: repeat(2, 150px) / auto-flow 200px;
-	grid-gap: 50px;
+	grid: repeat(2, 100px) / auto-flow 200px;
+	grid-gap: 200px;
 }
 
 .footer{
@@ -274,7 +278,8 @@ button{
 	}
 
 	.shtorm_logo{
-		width: 200px;
+		width: 300px;
+		padding-right: 15px;
    }
 	h2{
 		font-size: 35px;
@@ -324,8 +329,9 @@ button{
 @media screen and (max-width: 420px) {
 	.channel_list{
 		display: grid;
-		grid: repeat(8, 150px) / auto-flow 200px;
-		grid-gap: 5px;
+		grid: repeat(4, 50px) / auto-flow 100px;
+		grid-gap: 70px;
+		
 	}
 
 	input[type=text] {
@@ -344,14 +350,11 @@ button{
 		font-family: 'SF UI Text';
 		color: white;
 		font-size: 1.2em;
-		padding-left: 0px;
-		
-		
+		padding-left: 0px;		
 	}
 
 	.operator{
 		display: block;
-		margin: 0 auto;
-		
+		margin: 0 auto;		
 	}
 }
