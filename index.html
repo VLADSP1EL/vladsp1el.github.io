@@ -1,74 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<!--Привет))-->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="fonts/stylesheet.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-	<title>Shtorm TV</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <!--Скрипт для анимаций-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!--Скрипт для анимаций-->
+    <title>Офіційний додаток Shtorm для android смартфонів!</title>
 </head>
+
 <body>
-	<div class="main">
+    <div class="main">
 
-		<!--ШАпка-->
-		<div class="header">
-			<div class="promo_image">
-				<div class="promo_text">
-					<div class="shtorm_logo"><img src="img/shtorm_logo.png" class="shtorm_logo" width="30%" alt=""></div>
-					<h1>Дивись найкращі українські та зарубіжні телеканали зі SHTORM TV!</h1><br><Br>
-						<nav id="menu">
-					<a href="#connect" class="button_purchase">Підключай SHTORM TV за 1 грн / міс*</a><br><br>
-				</nav>
-					<a class="alert">* Тільки для нових користувачів</a><br><br>
+        <header>
 
-				</div>
-				
-			</div>
-		</div><br><br>
+            <div class="header"> 
 
-	<!--Список каналов-->
-		<div class="content">
-			<h2 style="color: black;">130 + кращих телеканалів українського та зарубіжного виробництва</h1><br><br>
-				<div class="channel_list_center">			
-				<div class="channel_list">
-					<img src="img/ukraine.png"  alt="">
-					<img src="img/novyhd.png"  alt="">
-					<img src="img/1plus1hd.png"  alt="">
-					<img src="img/tv1000.png"  alt="">
-					<img src="img/discovery.png"  alt="">
-					<img src="img/natgeo.png"  alt="">
-					<img src="img/football1.png"  alt="">
-					<img src="img/fox.png" alt="">
-				</div>
-		</div><br><br>
-	</div>
+                <h1 style="color: white;">Офіційний додаток Shtorm для android смартфонів!</h1><br><br>
+                <div class="download_on_googleplay">
+                    
+                    <img class="phone_img" src="img/shtorm_phone_1.png" width="30%" alt=""> 
+                    <div class="download">
+                        
+                        <a class="medium_text" style="color: white;">Завантажуй додаток Shtorm в Google Play</a><br><br>
+                        <a href="https://play.google.com/store/apps/details?id=com.shtorm.pay" class="download_button"><img width="40%" class="downloadbttn" src="img/download_button.png" alt=""></a>
+                </div>          
+            
+            </div>  
+            <img class="phone_img2 downloadbttn" src="img/shtorm_phone_1.png"  width="40%" alt="">    
 
-	<!--Заказ-->
-	<footer>
-		<div class="footer">
-			<br><br><h2 id="connect">Замовити підключення</h2><br>
-			<a class="alert">Введіть інформацію в поля нижче</a><br><br>
-			<form action="#">
-				<input type="text" placeholder="Місто *" required>
-				<input type="text" placeholder="Адреса проживання *" required><br><br>
-				<input type="text" placeholder="ПІБ *" required> 
-				<input type="text" placeholder="Номер телефона *" required><br><br>
-				<button type="submit" class="btn third">Замовити</button>
-			</form><br><br>
-			<a class="alert">Або зателефонуйте за номером: </a><br><br>
-			<div class="phone">
-			
-				<img class="operator" src="img/vodafone.png" width="30px" height="30px" alt=""><a href="tel:+380992301030" class="phone_num">&nbsp;&nbsp;&nbsp;&nbsp;(099)-230-10-30&nbsp;&nbsp;&nbsp;&nbsp;</a><br><br>
-			<img class="operator" src="img/kyivstar.png" width="30px" height="30px" alt=""><a href="tel:+380962301030" class="phone_num">&nbsp;&nbsp;&nbsp;&nbsp;(096)-230-10-30&nbsp;&nbsp;&nbsp;&nbsp;</a><br><br>
-		</div><br><br>
-		</div>
-	</footer>
-	</div>
+        </header>
+     </div>
+    
+     <div class="content" id="content">
+        <div class="content_block" id="content_block">
+            <h1 class="medium_text">Переваги Shtorm </h1><br><br>
+            <a class="small_text">Зручна оплата, та зберігання рахунку</a><br><br>
+            <div class="screenshots">
+                <img class="screenshot" src="img/screen_2.jpg" alt=""  data-aos="fade-right" style="border-radius: 10px;"><br><br>
+                <img class="screenshot" src="img/screen_1.jpg" alt=""  data-aos="fade-left" style="border-radius: 10px;">
+            </div><br><br>
+            <div class="payment" data-aos="fade-up">                
 
-	<script type="text/javascript">
+            <a class="small_text" ">Швидкий доступ до різних способів оплати</a><br><br>
+            <img style="display:block; margin:0 auto;" src="img/liqpay.png" class="screenshot"
+     
+        </div>
+        </div>
+     </div><br><br>
+    
+     
+    </div> 
+</body>
+
+
+<script>
+        AOS.init();
+
 		$(document).ready(function(){
 		   $("#menu").on("click","a", function (event) {
 			   event.preventDefault();
@@ -77,6 +70,6 @@
 			   $('body,html').animate({scrollTop: top}, 1500);
 		   });
 	   });
-	   </script>
-</body>
+
+</script>
 </html>
