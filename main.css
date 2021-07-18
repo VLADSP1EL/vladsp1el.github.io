@@ -1,268 +1,46 @@
-/*Сброс стилей*/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.navbar-nav li{
+    padding-right: 20px;
 }
 
-ul[class],
-ol[class] {
-  padding: 0;
+.nav-link{font-size: 1.1em !important;}
+
+.carousel-inner{
+  height: 500px;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-article > * + * {
-  margin-top: 1em;
-}
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/*Стили*/
-
-
-header{
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('img/header_image.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    -moz-background-size: 100%; 
-    -webkit-background-size: 100%;
-    -o-background-size: 100%; 
-    background-size: 100%;
-    display: block;
-    background-size: cover;
-}
-
-.header{
-    width: 80%;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 40px;
-}
-
-
-h1{
-    font-family: 'SF UI Text';
-    font-size: 50px;
-}
-
-.medium_text{
-    font-family: 'SF UI Text';
-    font-size: 35px;
-}
-
-.small_text{
-    font-family: 'SF UI Text';
-    font-size: 25px;
-}
-
-.download_on_googleplay{
-    display: flex;
-    justify-content: center;
-}
-
-.download{
-    display: block;
-   text-align: center;
-   padding-top: 100px;
-}
-
-.download_button{
-   display: flex;
-   justify-content: center;
-}
-
-
-
-.phone_img2{
-    display: none;
-}
-
-.content{
-    text-align: center;
-    padding-top: 10px;
-    display: block;
-    margin: 0 auto;
-}
-
-.content_block{
-    display: block;
-    width: 100%;
-}
-
-.screenshots{
-    display: flex;
-    justify-content: center;
-    margin: 0 0px;
-}
-
-.screenshot{
-    width: 20%;
-    
-     margin: 0 50px;
-}
-
-
+.carousel-inner img{
+    height: 100%;
  
-
-@media screen and (max-width: 1110px) {
-
-    .download{
-        display: block;
-       text-align: center;
-       padding-top: 50px;
-    }
-
-    .medium_text{
-        font-size: 25px;
-    }
-    h1{
-        font-size: 35px;
-    }
 }
 
-@media screen and (max-width: 900px) {
-    .download{
-        display: block;
-       text-align: center;
-       padding-top: 50px;
-    }
-}
-
-@media screen and (max-width: 815px) {
-    .medium_text{
-        font-family: 'SF UI Text';
-        font-size: 25px;
-    }
-    .phone_img{
-        display: none;
-    }
-    .phone_img2{
-        display: block;
-        margin: 0 auto;
-    }
-    .download{
-        display: block;
-       text-align: center;
-       padding-top: 0px;
-    }
-    .downloadbttn{
-        width: 60%;
-    }
-    .advantages{
-        display: block;
-        padding-left: 0px;
-    }
+.carousel-caption{
     
-    .screenshots{
-        display: block;
-        margin: 0 auto;
-    }
-
-    .screenshot{
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-    }
-    .content_block{
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-    } 
+    top: 50%;
+    transform:translateY(-80%);
+    text-shadow: 1px 1px 10px #000;
 }
 
+.row img{
+    width: 200px;
+    padding-top: 50px;
+}
 
-@media screen and (max-width: 400px) {
-    .phone_img{
-        display: none;
-    }
-    .phone_img2{
-        display: block;
-        margin: 0 auto;
-    }
-    .download{
-        display: block;
-       text-align: center;
-       padding-top: 0px;
-    }
-
-    h1{
-        font-family: 'SF UI Text';
-        font-size: 30px;
-    }
-
-    .medium_text{
-        font-family: 'SF UI Text';
-        font-size: 25px;
-    }
-
-    .downloadbttn{
+@media(min-width:1100px){
+    .carousel-inner img{
         width: 100%;
     }
+}
 
-    .screenshots{
-        display: block;
-        margin: 0 auto;
+@media(max-width:450px){
+    .carousel-caption .display-2{
+        font-size: 2em;
     }
+   
+}
 
-    .screenshot{
-        width: 50%;
-        display: block;
-        margin: 0 auto;
+@media(max-width:1100px){
+    .carousel-inner img{
+        width: 100%;
+        height: 1000px;
     }
-    .content_block{
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-    }   
 }
